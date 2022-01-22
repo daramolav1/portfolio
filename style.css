@@ -1,0 +1,160 @@
+/* Universal selector to zero out all margins */
+* {
+  margin: 0;
+}
+
+body {
+  /*Sets the background image of an element*/
+  background-image: url(https://images.pexels.com/photos/2341290/pexels-photo-2341290.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  /*Specifies the size*/
+  background-size: cover;
+  /*Specifies the initial position of the background image*/
+  background-position: center;
+  /*Specifies a prioritized list of font family names*/
+  font-family: "Roboto", sans-serif;
+  /*Sets the color of an element's text*/
+  color: #22211f;
+}
+
+/*
+Selects all divs
+Set to display all elements like blocks
+margin set to auto to horizontally center elements in its container
+width set to 40em to maintain content within certain measurement
+*/
+div {
+  display: block;
+  margin: auto;
+  width: 40em;
+}
+
+/*
+ID selector
+*/
+#intro,
+#about,
+#contact {
+  width: 80%;
+  margin: 50px auto;
+}
+
+/*
+margin bottom sets amount of space at bottom
+background-color changes color of background color
+color changes color of text
+text-align set to center to center all text
+*/
+
+header {
+  display: block;
+  margin-bottom: 100px;
+  background-color: #3f3935;
+  color: #c5bfb9;
+  text-align: center;
+}
+
+/*
+padding-top set space on top
+font-size set to 56px to make text larger than other text elements
+All h1 and h2 under header are affected
+*/
+
+header h1 {
+  margin: 0;
+  padding-top: 30px;
+  font-family: "Nanum Pen Script", cursive;
+  font-size: 56px;
+}
+
+header h2 {
+  padding-bottom: 30px;
+  color: #dbd7d2;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+h3 {
+  padding: 30px 0;
+  color: #3f3935;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+}
+
+/*
+Set line height of paragraph elements to make text more readable
+*/
+
+p {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+li {
+  padding-bottom: 10px;
+  font-size: 18px;
+}
+
+/*
+text-decoration set to none to remove underline
+link color changes default color
+pseudo-class affects link behaviors
+*/
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #397669;
+}
+
+a:visited {
+  color: #397669;
+}
+
+a:hover {
+  color: orange;
+}
+
+/*
+set image width to 100% to take 100% of its container
+rounded borders to improve image aesthetic
+*/
+
+img {
+  width: 100%;
+}
+
+img.rounded {
+  border-radius: 15px;
+}
+
+/*
+CHanged how horizontal rule looks from default settings
+*/
+
+hr {
+  display: block;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  width: 40em;
+  height: 3px;
+  background-color: #3f3935;
+}
+
+footer {
+  display: block;
+  background-color: #3f3935;
+  text-align: center;
+}
+
+footer h2 {
+  padding: 40px 0;
+  color: #dbd7d2;
+  font-size: 20px;
+  font-weight: 400;
+}
